@@ -19,11 +19,3 @@ provider "aws" {
   region  = "ap-southeast-1"
   profile = "default"
 }
-
-resource "aws_s3_bucket" "terraform_state" {
-  bucket = "devops-bootcamp-terraform-abrar"
-  acl    = "private"
-  versioning = {
-    enabled = true
-  }
-}
